@@ -223,6 +223,10 @@ footer span {
     width: calc(100%/2);
   }
   
+  .planning .text{
+    padding-right: 60px;
+  }
+  
   .planning .card {
     margin-top: 305px;
   }
