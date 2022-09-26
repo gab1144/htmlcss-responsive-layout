@@ -8,6 +8,7 @@ header {
   background-color: rgb(0, 132, 253);
   height: 75px;
   color: white;
+  padding: 0 35px;
 }
 
 .flex {
@@ -40,7 +41,6 @@ header {
 }
 
 header .container {
-  padding: 0 35px;
   height: 100%;
 }
 
@@ -50,6 +50,18 @@ header .logo img{
 
 .menu {
   font-size: 20px;
+}
+
+header .menu-desktop {
+  display: none;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 30px;
 }
 
 .row {
@@ -207,6 +219,14 @@ footer span {
 
 @media screen and (min-width: 769px){
   
+  header .menu-desktop {
+    display: block;
+  }
+
+  header .menu i {
+    display: none;
+  }
+
   .container { 
     max-width: 1140px;
     width: 90%;
@@ -226,7 +246,7 @@ footer span {
   .planning .text{
     padding-right: 60px;
   }
-  
+
   .planning .card {
     margin-top: 305px;
   }
