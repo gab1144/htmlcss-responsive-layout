@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Signika', sans-serif;
+}
+
 header {
   background-color: rgb(0, 132, 253);
   height: 75px;
@@ -54,6 +58,8 @@ header .logo img{
 
 header .menu-desktop {
   display: none;
+  height: 100%;
+  font-size: 18px;
 }
 
 header ul {
@@ -64,6 +70,26 @@ header ul li {
   margin-right: 30px;
 }
 
+header ul li a {
+  color:white;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottone {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.bottone a {
+  color: black;
+  text-decoration: none;
+}
+
 .row {
   width: 100%;
 }
@@ -71,24 +97,75 @@ header ul li {
 .info {
   padding-top: 50px;
   padding-bottom: 80px;
+  color: rgb(0, 132, 253);
+}
+
+.col {
+  margin-bottom: 25px;
 }
 
 .card {
   width: 100%;
-  height: 500px;
   border-radius: 20px;
-  margin-bottom: 25px;
+  padding: 40px 15px;
+  text-align: center;
 }
 
 .info .card {
   background-color: rgb(181, 221, 255);
+  height: 100%;
 }
+
+.info .card i {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.info .card p {
+  color: rgb(90, 110, 127);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
 
 .planning {
   background-color: rgb(149, 147, 230);
   color: white;
   padding-top: 65px;
   padding-bottom: 60px;
+}
+
+.info .card.txt-sx {
+  padding-bottom: 0;
+}
+
+.info .card.txt-sx {
+  text-align: left;
+}
+
+.info .card.txt-sx img {
+  width: 200px;
+}
+
+.info .text .bottone{
+  background-color: rgb(0, 132, 253);
+  color: white;
+  width: fit-content;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 35px;
+}
+
+.info .text .bottone a{
+  color: white;
+  font-size: 18px;
+}
+
+.info .text .bottone i{
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .text {
@@ -176,13 +253,23 @@ footer span {
   }
 
   .info .container .row .col {
-    width: calc(calc(100%/3) - 50px);
+    width: calc(calc(100%/3) - 25px);
     min-width: 150px;
   }
 
-  .info .container .row .col:first-child {
+  .info .container .row .col.due-terzi {
     width: calc(calc(100%/3) * 2);
     min-width: 300px;
+  }
+
+
+  .info .container .row .col.due-terzi:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info .container .row .col.due-terzi:not(:first-child) .card{
+    width: calc(calc(100%/2) - 12.5px);
   }
 
   .benefits .container .row {
@@ -232,6 +319,32 @@ footer span {
     width: 90%;
     padding: 0;
     margin: auto;
+  }
+
+  .info .card.txt-sx {
+    position: relative;
+  }
+  
+  .info .card.txt-sx .text {
+    margin: 0;
+    width: 50%;
+  }
+  
+  .info .card.txt-sx img {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 195px;
+  }
+  
+  .info .text .bottone{
+    background-color: rgb(0, 132, 253);
+    color: white;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 35px;
+    margin-bottom: 60px;
   }
 
   .planning .container {
