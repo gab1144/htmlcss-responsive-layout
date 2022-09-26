@@ -18,6 +18,10 @@ header {
   flex-wrap: wrap;
 }
 
+.dir-col {
+  flex-direction: column;
+}
+
 .space-btw {
   justify-content: space-between;
 }
@@ -90,4 +94,46 @@ header .logo img{
 
 .testimonial .card {
   background-color: rgb(149, 147, 230);
+}
+
+.benefits {
+  background-color: rgb(149, 147, 230);
+  padding-top: 70px;
+  padding-bottom: 65px
+}
+
+.benefits .card{
+  background-color: white;
+}
+
+.about-us {
+  background-color: white;
+  padding-top: 90px;
+  padding-top: 80px;
+}
+
+.about-us .card{
+  background-color: white;
+}
+
+.about-us .card img{
+  width: 180px;
+  border-radius: 50%;
+}
+
+.about-us .text p {
+  padding-top: 20px;
+}
+
+.get-started {
+  background-color: rgb(149, 147, 230);
+}
+
+.get-started span {
+  display: block;
+}
+
+footer {
+  height: 230px;
+  background-color: rgb(51, 51, 51);
 }
