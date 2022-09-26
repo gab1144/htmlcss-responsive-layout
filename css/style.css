@@ -231,10 +231,65 @@ header ul li a:hover {
 .testimonial {
   padding-top: 70px;
   padding-bottom: 110px;
+  text-align: center;
+}
+
+.testimonial h2{
+  color: rgb(151, 146, 228);
+  margin: 40px auto;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 35px;
 }
 
 .testimonial .card {
   background-color: rgb(149, 147, 230);
+}
+
+.testimonial .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.testimonial .card .text {
+  width: 100%;
+  height: 200px;
+  color: white;
+  height: auto;
+}
+
+/*--istruzioni per icona prima di ogni punto della lista informazioni del piano--*/
+.testimonial .card .text p::before, .testimonial .card .text p::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.testimonial .card .text p::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  content: "\f10d";
+  font-size: 20px;
+}
+
+.testimonial .card .text p::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  content: "\f10e";
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .benefits {
@@ -322,6 +377,14 @@ footer span {
 
   .planning .text h2 {
     font-size: 50px;
+  }
+
+  .testimonial .card {
+    display: flex;
+  }
+
+  .testimonial .card img{
+    margin-right: 30px;
   }
 
   .benefits .container .row {
@@ -417,6 +480,10 @@ footer span {
 
   .planning .text h2 {
     font-size: 30px;
+  }
+
+  .testimonial .card img{
+    margin-right: 50px;
   }
 
   .benefits .container .row .col {
