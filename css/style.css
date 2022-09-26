@@ -298,14 +298,48 @@ header ul li a:hover {
   padding-bottom: 65px
 }
 
-.benefits .card{
+.benefits .card {
   background-color: white;
+  text-align: left;
+  height: 100%;
+}
+
+.number {
+  color: rgb(149, 147, 230);
+  font-size: 40px;
+}
+
+.benefits .card h3 {
+  color: rgb(149, 147, 230);
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.benefits .card p {
+  color: rgb(129, 129, 129);
+  margin-bottom: 25px;
+}
+
+.benefits .card .bottone {
+  background-color: rgb(149, 147, 230);
+  width: fit-content;
+  padding-left: 45px;
+  padding-right: 45px; 
+}
+
+.benefits .card .bottone a{
+  color: white;
 }
 
 .about-us {
   background-color: white;
   padding-top: 90px;
   padding-top: 80px;
+}
+
+.about-us h2 {
+  font-size: 35px;
+  color: rgb(149, 147, 230);
 }
 
 .about-us .linkedin img{
