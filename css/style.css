@@ -156,6 +156,7 @@ footer span {
 ************/
 
 @media screen and (min-width: 481px){
+  
   .info .container .row {
     display: flex;
     justify-content: space-between;
@@ -197,4 +198,54 @@ footer span {
   .about-us .linkedin {
     width: calc(calc(100%/5) * 2);
   }
+
+}
+
+/***********
+  DESKTOP
+************/
+
+@media screen and (min-width: 769px){
+  
+  .container { 
+    max-width: 1140px;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+
+  .planning .container {
+    display: flex;
+  }
+
+  .planning > div {
+    height: 100%;
+    width: calc(100%/2);
+  }
+  
+  .planning .card {
+    margin-top: 305px;
+  }
+
+  .benefits .container .row .col {
+    width: calc(calc(100%/3) - 50px);
+  }
+
+  .about-us .text {
+    width: calc(calc(100%/3) * 2);
+    padding-right: 30px;
+  }
+
+  .about-us .linkedin {
+    width: calc(100%/3);
+  }
+
+  .get-started .container{
+    max-width: 570px;
+  }
+
+  footer .container {
+    max-width: 415px;
+  }
+
 }
