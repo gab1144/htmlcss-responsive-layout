@@ -470,12 +470,12 @@ footer span {
 
   .info .container .row .col {
     width: calc(calc(100%/3) - 25px);
-    min-width: 150px;
+    min-width: 100px;
   }
 
   .info .container .row .col.due-terzi {
     width: calc(calc(100%/3) * 2);
-    min-width: 300px;
+    min-width: 200px;
   }
 
 
@@ -523,6 +523,40 @@ footer span {
 
   .about-us .linkedin {
     width: calc(calc(100%/5) * 2);
+  }
+
+}
+
+/***************************************
+  QUERY INTERMEDIE TRA MOBILE E TABLET
+****************************************/
+
+@media screen and (min-width: 481px) and (max-width: 625px){
+  .info .container .row .card, 
+  .info .container .row .col.due-terzi .card, 
+  .info .container .row .col.due-terzi:not(:first-child) .card {
+    width: 100%;
+  }
+
+  .info .container .row{
+    display: block;
+  }
+  
+  .info .container .row .col, .info .container .row .col.due-terzi {
+    width: 100%;
+  }
+
+  .info .container .row .col.due-terzi:not(:first-of-type) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .testimonial .card {
+    display: block;
+  }
+
+  .testimonial .card img{
+    margin-right: 0;
   }
 
 }
