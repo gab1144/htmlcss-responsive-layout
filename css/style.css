@@ -31,6 +31,10 @@ header {
   justify-content: space-between;
 }
 
+.space-ar {
+  justify-content: space-around;
+}
+
 .just-c {
   justify-content: center;
 }
@@ -389,15 +393,55 @@ header ul li a:hover {
 .get-started {
   background-color: rgb(149, 147, 230);
   padding: 65px 0;
+  color: white;
+  text-align: center;
 }
 
-.get-started span {
-  display: block;
+.display-b {
+  display:inline-block;
+}
+
+.get-started span:first-of-type {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.get-started .container :nth-child(2) {
+  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.get-started :nth-child(3) {
+  margin: 45px auto;
+  color: rgb(253, 193, 95);
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.get-started p {
+  line-height: 35px;
+}
+
+.get-started .bottone {
+  margin: 35px auto;
+  padding: 25px 70px;
+  border-radius: 50px;
+}
+
+.get-started .bottone a {
+  color: rgb(149, 147, 230);
+  font-size: 20px;
+}
+
+.get-started span a {
+  color: white;
 }
 
 footer {
   height: 230px;
   background-color: rgb(51, 51, 51);
+  text-align: center;
 }
 
 footer .container {
