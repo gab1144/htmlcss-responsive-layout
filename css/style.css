@@ -129,6 +129,9 @@ header ul li a:hover {
   margin-top: 40px;
 }
 
+.info .container .row .col.due-terzi:not(:first-child) .card:first-of-type{
+  margin-bottom: 25px;
+}
 
 .planning {
   background-color: rgb(149, 147, 230);
