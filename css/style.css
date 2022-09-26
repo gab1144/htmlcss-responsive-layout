@@ -177,10 +177,55 @@ header ul li a:hover {
 
 .planning img {
   width: 100%;
+  margin-bottom: 85px;
 }
 
 .planning .card {
   background-color: white;
+}
+
+.planning .text {
+  color: white;
+}
+
+.planning .text h2 {
+  font-size: 25px;
+}
+
+.planning .text p {
+  margin-top: 60px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300px;
+}
+
+.planning .card {
+  color: black;
+  text-align: center;
+}
+
+.planning .card img {
+  margin-bottom: 0;
+}
+
+.planning .card h3 {
+  color: black;
+  font-size: 25px;
+  margin: 30px auto;
+}
+
+.planning .card p {
+  font-style: italic;
+  font-weight: 300px;
+  margin: 30px auto;
+}
+
+
+.arrow-d {
+  background-color: rgb(151, 146, 228);
+  padding: 10px 15px;
+  border-radius: 100%;
+  width: fit-content;
 }
 
 .testimonial {
@@ -275,6 +320,10 @@ footer span {
     width: calc(calc(100%/2) - 12.5px);
   }
 
+  .planning .text h2 {
+    font-size: 50px;
+  }
+
   .benefits .container .row {
     display: flex;
     justify-content: space-between;
@@ -284,7 +333,6 @@ footer span {
   .benefits .container .row .col {
     width: calc(calc(100%/2) - 20px);
   }
-
 
   .about-us .container {
     display: flex;
@@ -365,6 +413,10 @@ footer span {
 
   .planning .card {
     margin-top: 305px;
+  }
+
+  .planning .text h2 {
+    font-size: 30px;
   }
 
   .benefits .container .row .col {
