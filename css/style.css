@@ -52,6 +52,10 @@ header .logo img{
   font-size: 20px;
 }
 
+.row {
+  width: 100%;
+}
+
 .info {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -112,11 +116,7 @@ header .logo img{
   padding-top: 80px;
 }
 
-.about-us .card{
-  background-color: white;
-}
-
-.about-us .card img{
+.about-us .linkedin img{
   width: 180px;
   border-radius: 50%;
 }
@@ -127,6 +127,7 @@ header .logo img{
 
 .get-started {
   background-color: rgb(149, 147, 230);
+  padding: 65px 0;
 }
 
 .get-started span {
@@ -136,4 +137,64 @@ header .logo img{
 footer {
   height: 230px;
   background-color: rgb(51, 51, 51);
+}
+
+footer .container {
+  height: 100%;
+}
+
+footer span {
+  display: block;
+}
+
+/*********************************************
+        RESPONSIVE
+*********************************************/
+
+/***********
+  TABLET
+************/
+
+@media screen and (min-width: 481px){
+  .info .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .info .container .row .col {
+    width: calc(calc(100%/3) - 50px);
+    min-width: 150px;
+  }
+
+  .info .container .row .col:first-child {
+    width: calc(calc(100%/3) * 2);
+    min-width: 300px;
+  }
+
+  .benefits .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .benefits .container .row .col {
+    width: calc(calc(100%/2) - 20px);
+  }
+
+
+  .about-us .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us .text {
+    width: calc(calc(100%/5) * 3);
+    padding-right: 30px;
+  }
+  
+
+  .about-us .linkedin {
+    width: calc(calc(100%/5) * 2);
+  }
 }
