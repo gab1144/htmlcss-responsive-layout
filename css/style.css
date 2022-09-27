@@ -476,7 +476,7 @@ footer span {
   TABLET
 ************/
 
-@media screen and (min-width: 481px){
+@media screen and (min-width: 780px){
   
   .info .container .row {
     display: flex;
@@ -552,45 +552,11 @@ footer span {
 
 }
 
-/***************************************
-  QUERY INTERMEDIE TRA MOBILE E TABLET
-****************************************/
-
-@media screen and (min-width: 481px) and (max-width: 625px){
-  .info .container .row .card, 
-  .info .container .row .col.due-terzi .card, 
-  .info .container .row .col.due-terzi:not(:first-child) .card {
-    width: 100%;
-  }
-
-  .info .container .row{
-    display: block;
-  }
-  
-  .info .container .row .col, .info .container .row .col.due-terzi {
-    width: 100%;
-  }
-
-  .info .container .row .col.due-terzi:not(:first-of-type) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .testimonial .card {
-    display: block;
-  }
-
-  .testimonial .card img{
-    margin-right: 0;
-  }
-
-}
-
 /***********
   DESKTOP
 ************/
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1100px){
   
   header .menu-desktop {
     display: block;
